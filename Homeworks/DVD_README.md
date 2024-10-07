@@ -20,7 +20,7 @@ Este repositorio contiene un programa de simulación inspirado en el clásico re
     ```
 3. Ejecuta el programa:
     ```bash
-    python dvd_simulation.py
+    python DVD.py
     ```
 
 Presiona `q` para salir de la simulación.
