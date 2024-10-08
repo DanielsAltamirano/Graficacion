@@ -26,9 +26,6 @@ else:
     # Redimensionar de nuevo a las dimensiones originales
     imagen_pixel_art = cv2.resize(imagen_reducida, (ancho, alto), interpolation=cv2.INTER_NEAREST)
 
-    # Mostrar la imagen original en una ventana
-    cv2.imshow('Imagen Original', imagen)
-
     # Crear una ventana que se ajuste a la imagen pixel art
     cv2.namedWindow('Pixel Art', cv2.WINDOW_NORMAL)
     cv2.resizeWindow('Pixel Art', ancho, alto)
