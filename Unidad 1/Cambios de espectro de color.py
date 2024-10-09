@@ -2,7 +2,7 @@ import cv2 as cv  # Importar OpenCV
 import numpy as np  # Importar NumPy para operaciones matriciales
 
 # Leer la imagen a color desde la ruta especificada
-img = cv.imread(r'C:\Users\Daniels\Downloads\hongomario.jpg')
+img = cv.imread(r'C:\Users\Daniels\Desktop\graficacion\Recursos\hongomario.jpg')
 # Mostrar la imagen original en una ventana
 cv.imshow('Imagen Original', img)
 

@@ -2,7 +2,7 @@ import cv2 as cv  # Importa OpenCV, que es útil para procesamiento de imágenes
 import numpy as np  # Importa NumPy, que es útil para trabajar con matrices y operaciones numéricas.
 
 # Carga la imagen '1a.png' en color (1 para color, 0 para escala de grises).
-img = cv.imread(r'C:\Users\Daniels\Downloads\hongomario.jpg',1)
+img = cv.imread(r'C:\Users\Daniels\Desktop\graficacion\Recursos\hongomario.jpg',1)
 
 # Crea una imagen vacía (llena de ceros, que representa color negro) con el mismo tamaño que la imagen original.
 # La imagen vacía tiene un solo canal (escala de grises), por lo que se usa `img.shape[:2]` para obtener las dimensiones de la imagen (alto, ancho).
