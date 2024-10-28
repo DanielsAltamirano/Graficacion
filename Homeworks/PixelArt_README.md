@@ -29,7 +29,8 @@ El programa abrirá una ventana mostrando la imagen con el efecto de Pixel Art a
 - **Ruta de la imagen**: Edita la variable `ruta_imagen` en el código para que apunte a la ubicación de la imagen que desees procesar.
 - **Factor de Pixel Art**: Modifica la variable `factor_pixel_art` para ajustar el nivel de pixelado. Valores más bajos incrementan el nivel de pixelado y valores más altos lo reducen.
 
-----------
-
-
+## Ejemplo
+### Imagen Original 
 ![Pixel Art Example](https://raw.githubusercontent.com/DanielsAltamirano/Graficacion/refs/heads/master/Recursos/SharinganMadara.svg.png)
+### Imagen Pixelada
+![Pixel Art Example](https://github.com/DanielsAltamirano/Graficacion/blob/master/Recursos/PixelArt.png?raw=true)
