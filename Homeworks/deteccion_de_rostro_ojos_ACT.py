@@ -6,7 +6,7 @@ rostro = cv.CascadeClassifier(r'C:\Users\Daniels\Desktop\graficacion\Recursos\ha
 ojos = cv.CascadeClassifier(r'C:\Users\Daniels\Desktop\graficacion\Recursos\haarcascade_eye.xml')
 
 # Cargar la imagen de corazón
-heart_img = cv.imread(r'C:\Users\Daniels\Desktop\graficacion\Recursos\orus.png', -1)  # Imagen con canal alfa
+heart_img = cv.imread(r'C:\Users\Daniels\Desktop\graficacion\Recursos\SharinganMadara.svg.png', -1)  # Imagen con canal alfa
 
 # Función para superponer corazones
 def overlay_image(background, overlay, x, y, w, h):
