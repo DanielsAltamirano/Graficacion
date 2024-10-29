@@ -13,13 +13,13 @@ ancho, alto = imagen_gris.shape[1], imagen_gris.shape[0]
 imagen_escalada = cv2.resize(imagen_gris, (ancho // 2, alto // 2), interpolation=cv2.INTER_LINEAR)
 
 # Crear la matriz de convolución 3x3 para suavizado (todos los valores 1/9) 
-kernel = np.ones((3, 3), np.float32) / 9
+matriz = np.ones((3, 3), np.float32) / 9
 
 # Función para aplicar la convolución manualmente
-def aplicar_convolucion(imagen, kernel):
-    # Obtener dimensiones de la imagen y del kernel
+def aplicar_convolucion(imagen, matriz):
+    # Obtener dimensiones de la imagen y de la matriz
     h, w = imagen.shape
-    k_h, k_w = kernel.shape
+    k_h, k_w = matriz.shape
     
     # Calcular el padding necesario
     pad_h = k_h // 2
@@ -34,13 +34,13 @@ def aplicar_convolucion(imagen, kernel):
         for j in range(w):
             # Extraer la región de interés
             region = imagen_padded[i:i + k_h, j:j + k_w]
-            # Aplicar el kernel y almacenar el resultado
-            imagen_convolucionada[i, j] = np.sum(region * kernel)
+            # Aplicar la matriz y almacenar el resultado
+            imagen_convolucionada[i, j] = np.sum(region * matriz)
     
     return imagen_convolucionada
 
 # Aplicar la convolución manualmente
-imagen_convolucionada = aplicar_convolucion(imagen_escalada, kernel)
+imagen_convolucionada = aplicar_convolucion(imagen_escalada, matriz)
 
 # Mostrar las imágenes
 cv2.imshow("Imagen Original", imagen_original)
