@@ -33,8 +33,8 @@ def draw_triangle(triangle):
         # Ajustar la posición inicial horizontal para centrar cada fila
         x_offset = center_x - (len(row) * 40 // 2)
         for j, value in enumerate(row):
-            x = x_offset + j * 40  # Separación horizontal ajustada
-            y = y_offset + i * 50  # Separación vertical ajustada
+            x = x_offset + j * 40  # Separación horizontal 
+            y = y_offset + i * 50  # Separación vertical 
             cv2.circle(img, (x, y), 20, (255, 255, 255), -1)  # Dibuja el círculo
             cv2.putText(img, str(value), (x - 10, y + 5), 
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 1, cv2.LINE_AA)  # Dibuja el texto
