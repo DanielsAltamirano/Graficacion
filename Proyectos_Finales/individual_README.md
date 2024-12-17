@@ -102,11 +102,12 @@ Se liberan los recursos de la cámara y se cierran todas las ventanas al presion
 
 ## Capturas de Pantalla
 
+## -----> [Ver video](https://youtu.be/51FoG18x384)  <----- 
 
-
+## Recomendaciones 
 - Asegúrate de trabajar en un entorno bien iluminado para mejorar la detección de las manos.
 - Puedes ajustar los parámetros de detección y seguimiento en el módulo de Mediapipe para obtener mejores resultados en diferentes condiciones.
-#
+
 
 # Autor
  **[Daniels John Altamirano Ramírez]** - Proyecto Final de Graficación en Ingeniería Sistemas Computacionales.
